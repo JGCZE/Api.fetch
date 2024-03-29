@@ -1,7 +1,9 @@
+export const getBlogs = async () => {
+  const res = await fetch('https://jsonplaceholder.typicode.com/users');
+  
+  if(!res.ok) {
+      throw new Error('Failed to fetch data');
+  }
 
-const fetchBlog = async () => {
-    const response = await fetch('https://jsonplaceholder.typicode.com/users');
-    const data = await response.json();
- 
-    return data;
-};
+  return res.json();
+}

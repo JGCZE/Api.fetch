@@ -1,0 +1,19 @@
+.container {
+  margin: 30px auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.oneUser {
+  border: 1px solid black;
+  height: 160px;
+  width: 260px;
+  padding: 10px;
+}
